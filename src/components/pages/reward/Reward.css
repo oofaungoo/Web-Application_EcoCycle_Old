@@ -31,59 +31,9 @@
     color: #007bff;
 }
 
-.hot-this-week {
-    width: 100%;
-    padding: 10px;
-}
-
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-}
-
-.section-header span {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.see-all {
-    font-size: 14px;
-    color: #007bff;
-}
-
 /* ส่วนของการแสดงรายการ reward ที่เรามีอยู่ */
 
 .reward-list {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-}
-
-.reward {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.reward:last-child {
-    border-bottom: none;
-}
-
-.reward-image {
-    max-width: 100px;
-    max-height: 100px;
-    margin-right: 10px;
-}
-
-.reward-info {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.icon-coin {
-    width: 16px;
-    height: 16px;
 }

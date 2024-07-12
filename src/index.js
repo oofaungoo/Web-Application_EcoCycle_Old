@@ -18,6 +18,6 @@ root.render(
         <Route path='reward' element={<Reward />} />
       </Routes>
     </BrowserRouter>
-    <div className='text-center footer fs-13 text-grey'>Copyright© 2024 เฟื่อง & บอม และมีมาร์กกี้แอบแฝง(EIP2024 intership)</div>
+    <div className='text-center footer fs-13 text-grey'>Copyright© 2024 เฟื่อง & บอม (EIP2024 intership)</div>
   </React.StrictMode>
 );

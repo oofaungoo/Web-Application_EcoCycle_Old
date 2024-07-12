@@ -19,7 +19,7 @@ items = [
 ]
 
 users = [
-    {'username': 'มู่หลาน ตวัดดาบ', 'customer': 'SCIeco สาขาจีนแผ่นดินใหญ่', 'point': 200}
+    {'username': 'มู่หลาน ตวัดดาบ', 'customer': 'SCIeco สาขาจีนแผ่นดินใหญ่', 'point': 750}
 ]
 
 rewards = [
