@@ -1,13 +1,218 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500&display=swap');
+
+:root {
+  --light-red-color: #ffe4e1;
+  --red-color: #ff4b4b;
+  --light-red-color: #ffb9b9;
+  --dark-red-color: #d32f2f;
+  --dark-blue-color: #007bff;
+  --blue-color: #5398ff;
+  --light-blue-2-color: #a9cbff;
+  --light-blue-color: #EAF3FB;
+  --black-color: #333;
+  --white-color: #fff;
+  --grey-color: #838383;
+  --light-grey-color: #F5F5F5;
+  --green-color: #00796b;
+  --mint-color: #09949c;
+  --blue-logo-color: #3A72FF;
+  --green-logo-color: #5BE988;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 10px;
+  background-color: var(--light-blue-color);
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'IBM Plex Sans Thai';
+  color: var(--black-color);
+}
+
+/* resets */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input {
+  border: none;
+  outline: 0;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/* text */
+.text-black {
+  color: var(--black-color);
+}
+
+.text-white {
+  color: var(--white-color);
+}
+
+.text-green {
+  color: var(--green-color);
+}
+
+.text-mint {
+  color: var(--mint-color);
+}
+
+.text-grey {
+  color: var(--grey-color)
+}
+
+.text-blue-logo {
+  color: var(--blue-logo-color);
+}
+
+.text-green-logo {
+  color: var(--green-logo-color);
+}
+
+.text-grey {
+  color: var(--grey-color)
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-top {
+  align-self: flex-start;
+}
+
+/* font weights */
+.fw-3 {
+  font-weight: 300;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-8 {
+  font-weight: 800;
+}
+
+.fw-9 {
+  font-weight: 900;
+}
+
+/* font sizes */
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+/* letter spacing */
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.flex-c {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  padding: 20px;
+  background-color: var(--white-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 500px;
+  width: 96%;
+}
+
+.footer {
+  padding: 30px 0 12px 0;
+}
+
+/* CSS of Price.jsx */

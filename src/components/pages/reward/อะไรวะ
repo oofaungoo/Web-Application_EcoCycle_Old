@@ -1,0 +1,14 @@
+<section className="hot-this-week">
+                <div className="section-header">
+                    <span className="see-all">ดูทั้งหมด</span>
+                </div>
+                <div className="item-list">
+                    {items.map(item => (
+                        <div key={item.id} className="item-card">
+                            <img src={item.img} alt={item.name} className="item-image" />
+                            <span className="item-name">{item.name}</span>
+                            <span className="item-points">{item.points} คะแนน</span>
+                        </div>
+                    ))}
+                </div>
+            </section>

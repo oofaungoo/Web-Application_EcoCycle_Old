@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  BrowserRouter, Routes, Route
+} from 'react-router-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Menu from './components/pages/menu/Menu';
+import Price from './components/pages/price/Price';
+import Reward from './components/pages/reward/Reward';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Menu />} />
+        <Route path="price" element={<Price />} />
+        <Route path='reward' element={<Reward />} />
+      </Routes>
+    </BrowserRouter>
+    <div className='text-center footer fs-13 text-grey'>Copyright© 2024 เฟื่อง & บอม และมีมาร์กกี้แอบแฝง(EIP2024 intership)</div>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

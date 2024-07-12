@@ -1,0 +1,36 @@
+.notice {
+    background-color: var(--light-red-color);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--dark-red-color);
+    /* สีฟอนต์ กำหนดในนี้ไปเลย */
+    margin: 20px 0px 20px 0;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
