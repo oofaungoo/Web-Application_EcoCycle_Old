@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HiChevronLeft } from 'react-icons/hi';
 import './Price.css';
+import Btnreturn from '../../assets/btnreturn/Btnreturn';
+import Noti from './Noti';
 
 const Price = () => {
     const [items, setItems] = useState([]);
@@ -21,22 +23,11 @@ const Price = () => {
 
     return (
         <div className="container">
-            <div>
-                <Link to="/">
-                    <div style={{ marginBottom: '10px' }}>
-                        <HiChevronLeft />
-                        <span className='fs-16'>ย้อนกลับ</span>
-                    </div>
-                </Link>
-            </div>
+            <Btnreturn />
 
             <div className="text-center text-mint fs-22 fw-5">ราคารับซื้อ (Purchase Price)</div>
 
-            <div className="notice fs-15">
-                <div>⚠️ หมายเหตุ ⚠️</div>
-                <div>- ราคามีการปรับเปลี่ยนตลอดเวลา</div>
-                <div>- ทางบริษัทขอสงวนสิทธิ์ในการเปลี่ยนแปลง เงื่อนไข ยกเลิกได้โดยไม่ต้องแจ้งให้ทราบล่วงหน้า</div>
-            </div>
+            <Noti />
 
             <div className="text-center fs-15 fw-5 text-green">อัปเดตราคาล่าสุด: {dateData[0].date}</div>
 

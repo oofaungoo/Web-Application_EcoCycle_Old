@@ -49,9 +49,9 @@ const Reward = () => {
 
             <nav className="category-nav">
                 <div className="category-item">All</div>
-                <div className="category-item">Electronic & IT</div>
-                <div className="category-item">Lifestyle</div>
+                <div className="category-item">Souvenir</div>
                 <div className="category-item">Health</div>
+                <div className="category-item">Food & Drinks</div>
             </nav>
 
             <ul className="reward-list">
