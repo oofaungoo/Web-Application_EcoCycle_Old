@@ -6,6 +6,7 @@ import Form_phonenumber from './form_group/Phonenumber';
 import Form_fullname from './form_group/Fullname';
 import Form_condition from './form_group/Condition';
 import Form_alert from './form_group/Alert';
+import ProductList from './form_group/ProductList';
 
 const FormComponent = () => {
     const userData = {
@@ -88,6 +89,9 @@ const FormComponent = () => {
             <Form_phonenumber phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber} handlePhoneNumberChange={handlePhoneNumberChange} />
             <Form_fullname fullName={fullName} setFullName={setFullName} />
 
+
+            <ProductList />
+
             <div className="form-group">
                 <div className='fs-15 fw-5 text-mint'>Image | รูปถ่าย</div>
                 <input
@@ -96,7 +100,7 @@ const FormComponent = () => {
                     required
                 />
                 {imagePreview && (
-                    <img src={imagePreview} alt="Preview" style={{ height: "250px", width: "100px", objectFit: "cover", marginTop: "10px" }} />
+                    <img src={imagePreview} alt="Preview" style={{ height: "200px", width: "250px", objectFit: "cover", marginTop: "10px" }} />
                 )}
             </div>
 
@@ -113,10 +117,10 @@ const FormComponent = () => {
             <Form_alert />
 
             <div className="form-actions">
-                <button type="button" className="btn btn-grey" onClick={() => console.log('Cancelled')}>
+                <button type="button" className="btn btn-grey fw-4" onClick={() => console.log('Cancelled')}>
                     Cancel
                 </button>
-                <button type="submit" className="btn btn-blue">
+                <button type="submit" className="btn btn-blue fs-16 fw-5">
                     Submit
                 </button>
             </div>

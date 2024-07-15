@@ -5,11 +5,9 @@ import { HiChevronLeft } from "react-icons/hi";
 const Btnreturn = () => {
     return (
         <div>
-            <Link to="/">
-                <div className='text-gray'>
-                    <HiChevronLeft />
-                    <span className='fs-16 text-gray'>ย้อนกลับ</span>
-                </div>
+            <Link to="/" className='text-grey'>
+                <HiChevronLeft />
+                <span className='fs-16'>ย้อนกลับ</span>
             </Link>
         </div>
     )

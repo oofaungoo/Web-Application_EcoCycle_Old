@@ -34,11 +34,6 @@ const Form_condition = ({ condition, setCondition, bank, setBank, bankNumber, se
                     </div>
                 </>
             )}
-            {condition === "สะสมแต้ม" && (
-                <div className='fs-15 text-red' style={{ marginBottom: '16px' }}>
-                    คะแนนสะสมปัจจุบัน: {userData.point}
-                </div>
-            )}
         </>
     );
 };
